@@ -6,7 +6,7 @@ local colorCount = 0
 local styleCount = 0
 
 local function pushStyle(idx, val)
-    if type(val) == "cdata" then
+    if type(val) == 'cdata' then
         imgui.PushStyleVar2(idx, val)
     else
         imgui.PushStyleVar1(idx, val)
@@ -16,7 +16,7 @@ local function pushStyle(idx, val)
 end
 
 local function pushColor(idx, col)
-    if type(col) == "cdata" then
+    if type(col) == 'cdata' then
         imgui.PushStyleColor2(idx, col)
     else
         imgui.PushStyleColor1(idx, col)

@@ -1,14 +1,14 @@
+# BeamMP Zombie mod
+A multiplayer game mode where one player starts as a zombie and has to infect (collide with) all survivors (other players).
+
+Very much a work in progress.
+
+Inspired and influenced by both the original and BeamMP version of Flood mod.
+* https://github.com/vulcan-dev/BeamMP-FloodMod
+* https://www.beamng.com/threads/flood.87202/
+
 ### How to package:
 * server/* -> Resources/Server/Zombie
 * client/* -> Resources/Client/Zombie.zip
 
 Need 7-Zip installed to run `reload.ps1`
-
-Should make a symlink from ./server to C:\BeamMpServer\Resources\Server\Zombie
-
----
-
-### How to get collisions:
-map.objects[vehicleGameID].objectCollisions
-print(jsonEncode(map.objects[74493].objectCollisions))
---> { otherVehicleGameID: 1 } | {}
