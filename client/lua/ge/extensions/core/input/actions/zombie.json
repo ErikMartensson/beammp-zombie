@@ -1,0 +1,11 @@
+{
+    "zombie_ui": {
+        "cat": "gameplay",
+        "order": 0,
+        "ctx": "tlua",
+        "onDown": "zombie.showUI[0] = not zombie.showUI[0]",
+        "isBasic": true,
+        "title": "Zombie UI",
+        "desc": "Toggles the zombie UI"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "Lua.diagnostics.globals": [
+    "be",
+    "jsonEncode",
+    "map",
+    "log",
+    "extensions",
+    "zombieui",
+    "MP",
+    "TriggerServerEvent",
+    "AddEventHandler",
+    "Util"
+  ]
+}
