@@ -90,6 +90,7 @@ end
 
 function StopOutbreak(pid, data)
   print('Triggered event to stop outbreak', pid, data)
+  MP.CancelEventTimer('checkForSurvivors')
   reset()
   MP.TriggerClientEvent(-1, 'zombieStopOutbreak', '')
 end
