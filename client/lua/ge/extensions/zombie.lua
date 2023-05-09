@@ -2,7 +2,7 @@ local imgui = ui_imgui
 
 local M = {}
 
-M.showUI = imgui.BoolPtr(true)
+M.showUI = imgui.BoolPtr(false)
 M.outbreak = false
 M.playerIsInfected = false
 M.collisions = {}
@@ -119,6 +119,9 @@ M.setInfected = function ()
 end
 M.setSurvivor = function ()
     M.playerIsInfected = false
+end
+M.toggle = function ()
+    M.showUI[0] = not M.showUI[0]
 end
 
 M.onExtensionLoaded = function()
